@@ -1,0 +1,256 @@
+<!-- Add your content of head and header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link href="static/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="static/favicon.ico" rel="icon">
+
+  <title>HR KickStart!</title>  
+
+<link href="static/main.97292821.css" rel="stylesheet">
+
+<style>
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+ <!-- Add your content of header -->
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse">
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <ul class="nav navbar-nav navbar-right">
+            
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<!-- Add your site or app content here -->
+<div class="background-image-container white-text-container" style="background-image: url('./static/images/img-05.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 style="color: beige; text-shadow: 2px 2px 10px #09b6b6;">HR KickStart!</h1>
+                <p style="color: beige; font-size: large; "> The Best Platform for Novice HRs</p>
+                <p style="color: beige; font-size: large; "> By Mahima S.Shetty</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-container" style="padding: 5%; background-image: url('./static/images/img111.jpg');">
+    <div class="container model" style="padding: 5%;background-color: rgb(27, 27, 27); border-radius: 30px; opacity: 100%; box-shadow: 5px 10px 40px 10px rgb(255, 255, 255); ">
+        <div class="login">
+            <h1 style=" text-align: center; color: beige; font-size: 50px; text-shadow: 2px 2px 3px #bef1f1;">Check whether or not your employee will quit your organization?</h1>
+        
+            
+            <div class="forminput" style="text-align: center; margin: 50px 50px;">
+            <form action="/predict" method="post">
+                
+                <input type="text" name="satisfaction_level" placeholder="Enter Satisfaction Level of the employee on a scale of 0 to 1" required="required"><br>
+                <input type="text" name="last_evaluation" placeholder="Enter Last evaluation score of the employee on a scale of 0 to 1" required="required"><br>
+                <input type="text" name="number_project" placeholder="Enter Estimated number of projects the employee have completed (for example, 6)" required="required"><br>
+                <input type="text" name="average_monthly_hours" placeholder="Enter monthly average hours (for example, 265)" required="required"><br>
+                <input type="text" name="time_spend_company" placeholder="Enter time spend in the company (for example, 4)" required="required"><br>
+                <br><br>
+                <label style="font-size: large; color: beige;">Had the employee met with any work accident?</label>
+                <select id="Work_accident" name="Work_accident">
+                    <option value=1>Yes</option>
+                    <option value=0 selected>No</option>
+                  </select><br><br>
+                <label style="font-size: large; color: beige;">Had the employee receive promotion in last 5 years?</label>
+                <select id="promotion_last_5years" name="promotion_last_5years">
+                      <option value=1>Yes</option>
+                      <option value=0>No</option>
+                </select><br><br>
+                <label style="font-size: large; color: beige;">What is the salary range of the employee?</label>
+                <select id="promotion_last_5years" name="promotion_last_5years">
+                      <option value=2>High  <span>(above 15L per annum)</span></option>
+                      <option value=1>Medium <span>(between 10L - 15L per annum)</span></option>
+                      <option value=0>Low <span>(below 10L per annum)</span></option>
+                </select><br><br>
+                
+               <br>
+                <button type="submit" class="btn" style="text-transform: capitalize;   "> Predict </button>
+            </form>
+            <br>
+            <br>
+            <h6 style="color: beige; font-size: 30px;">{{prediction_text}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-container section-half-background-image-container">
+    <div class="image-column" style="background-image: url('./static/images/img-01.jpg');"></div>
+    <div class="container">
+        <div class="row">
+            <div class="section-label reveal">
+                <p style="color: rgb(235, 235, 177);">Coworking</p>
+            </div>
+            <div class="col-md-6 col-md-offset-6 text-column">
+                <h2>What 6 Qualities Make a Good Human Resources Professional?</h2>
+                
+                <p>
+
+                    <h3>Knowledge and Expertise in Human Resources.</h3>
+                    <br>
+                    <h3>Communication.</h3>
+                    <br>
+                    <h3>Time Management and Self Discipline.</h3>
+                    <br>
+                    <h3>Trustworthy.</h3>
+                    <br>
+                    <h3>Impartial and Objective.</h3>
+                    <br>
+                    <h3>Train, Develop, and Mentor.</h3>
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 section-container-spacer">
+                <h2 class="text-center">Qualities Every Successful HR Professional Should Have</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <img src="./static/images/img-02.jpg" alt="" class="img-responsive">
+                <h3 class="text-center">Be Organized</h3>
+                <p>HR pros have a lot on their plate, that’s why it’s so important to stay organized. HR is pulled in so many directions and interrupted throughout the day that you need to be able to switch gears at the drop of a hat. Invest in sticky notes, to-do lists, task management software—whatever helps you prioritize your day, improve your daily workflow, and keep you on track to meet your goals, should interruptions arise.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <img src="./static/images/img-03.jpg" alt="" class="img-responsive">
+                <h3 class="text-center">Communicate Effectively</h3>
+                <p>Being a good communicator is an essential skill for any people-facing role. From interviewing job candidates to solving issues around the office, being able to communicate your ideas and decisions effectively will help you tackle whatever comes your way.</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img src="./static/images/img-04.jpg" alt="" class="img-responsive">
+                <h3 class="text-center">Decision Making</h3>
+                <p>Unfortunately, HR isn’t all fun and games. More often than not you’ll have to put what is best for the company ahead of your personal desires, whether that’s assisting with layoffs or scaling back employee benefits. HR pros have to make difficult decisions on a daily basis. Knowing your decisions impact the lives of your employees and their families can be a daunting realization, but being able to make the right call for the good of business is an important and necessary skill for any HR pro.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+    
+  googleMapInit(); 
+  scrollToAnchor();
+  scrollRevelation('reveal');
+});
+</script>
+
+<footer class="footer-container white-text-container">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-4">
+                    <h4>About me</h4>
+                    <p>Hello! This is Mahima. Thank you for visiting this website app. The website is designed for novice HRs. In the prediction ML model, it analyzes the chances of an employee quitting an organization according to various factors. </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Do you like ? Share this !</h4>
+                    <div>
+                        <p>
+                            <a href="https://www.instagram.com/mahimahello/" class="fa-icon" title="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                            <a href="mailto:msshetty237@gmail.com" class="fa-icon" title="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mahima-shetty-ai-ml" class="fa-icon" title="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <p><small>© HR_KickStart_MahimaSShetty | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></small></p>
+                    </div>
+
+                </div>
+
+            
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+  navbarToggleSidebar();
+});
+</script>
+
+
+<script type="text/javascript" src="static/main.faaf51f9.js"></script>

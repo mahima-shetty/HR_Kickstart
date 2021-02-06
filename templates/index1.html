@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Predict Burnt Calories</h1>
+    
+        <h3>Enter the following values to predict the Calories burnt for the FitBit Analysis<br><span>(Enter only numerics)</span></h3>
+    
+        <div class="forminput" style="text-align: center;">
+        <form action="/predict" method="post">
+            
+            <input type="float" name="satisfaction_level" placeholder="Enter Satisfaction Level of the employee on a scale of 0 to 1" required="required"><br>
+            <input type="float" name="last_evaluation" placeholder="Enter Satisfaction Level of the employee on a scale of 0 to 1" required="required"><br>
+            <input type="float" name="number_project" placeholder="Enter Estimated number of projects the employee have completed" required="required"><br>
+            <input type="float" name="average_monthly_hours" placeholder="Enter monthly average hours" required="required"><br>
+            <input type="float" name="time_spend_company" placeholder="Enter time spend in the company" required="required"><br>
+            <label>Have the employee encountered with any work accident?</label><br>
+            <select id="Work_accident" name="Work_accident">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+              </select><br>
+            <label>Have the employee received promotion in last 5 years?</label><br>
+            <select id="promotion_last_5years" name="promotion_last_5years">
+                  <option value=1>Yes</option>
+                  <option value=0>No</option>
+            </select><br>
+            <label>What is the salary range of the employee?</label><br>
+            <select id="promotion_last_5years" name="promotion_last_5years">
+                  <option value=2>High</option>
+                  <option value=1>Medium</option>
+                  <option value=0>Low</option>
+            </select><br>
+            
+           <br>
+            <button type="submit" class="btn" style="text-transform: capitalize;  "> Predict </button>
+        </form>
+        {{prediction_text}}
+        </div>
+    </div>
+</body>
+</html>
