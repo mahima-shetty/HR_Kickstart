@@ -2,6 +2,7 @@ import numpy as np
 import sklearn
 from flask import Flask, render_template,request
 import pickle#Initialize the flask App
+import gunicorn
 app = Flask(__name__)
 model = pickle.load(open('HumanResourcesmodel.pickle', 'rb'))
 
