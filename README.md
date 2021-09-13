@@ -31,12 +31,23 @@ In our dataset, we have good characteristics like
 This can be used to determine whether the employee will stay or not.
 
 # ML Model Making
-For data model, I have used Support Vector Classifier as it was best compared with various ML models for this type of data. 
-![svm](https://user-images.githubusercontent.com/41589522/132282181-a18bb0da-c288-4cf8-8f6c-9ba2555955bf.gif)
+
+oversampling/undersampling techniques if the dataset was highly imbalanced. You can also specify the various ways in which you tackled data leakages, overfitting, bias-variance tradeoffs, and improved your accuracy while using the learning curves.
+
+Feature Scaling – Standardization and Normalization
+The encoded variables – One Hot Encoding, Label Encoding
+The Feature Reduction techniques used
+Feature engineering that was performed
+
+GridSearchCV or RandomizedSearchCV
+
+For data model, I have used Random Forest Classifier as it was best compared with various ML models for this type of data. 
+
+![15391random_forest_gif](https://user-images.githubusercontent.com/41589522/133066114-4e3023a7-48e4-4f7c-b764-a2a6c8b2f55d.gif)
 
 
 <!-- ![Random Forest 03](https://user-images.githubusercontent.com/41589522/128638871-b6d1eba3-b5bf-4c28-b9a5-af7c8d36669d.gif) -->
-***Image Credit: vatsalparsaniya.github.io***
+***Image Credit: Analytics Vidhya***
 <hr>
 
 ## Scores in Final Model 😀
