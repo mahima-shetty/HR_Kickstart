@@ -86,6 +86,8 @@ For data model, I have used Random Forest Classifier as it was best compared wit
  Recall (Sensitivity) - Recall is the ratio of correctly predicted positive observations to the all observations in actual class - yes.
  F1 score - F1 Score is the weighted average of Precision and Recall. Therefore, this score takes both false positives and false negatives into account.
  F1 Score = 2*(Recall * Precision) / (Recall + Precision)
+ 
+ 
 ***precision_score: 0.8717948717948718***
 
 ***recall_score: 0.6631989596879063***
