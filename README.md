@@ -1,3 +1,4 @@
+<!-- ![image](https://user-images.githubusercontent.com/41589522/133105285-88274864-aeae-438b-9266-259d7cdebfc8.jpg) -->
 # HR_Kickstart
 
 ## HR_KickStart is a web based application made with affection :innocent: for budding HR trainee & enthusiasts.
@@ -5,7 +6,8 @@ https://hr-kickstart-mahimasshetty.herokuapp.com/
 
 Template Website created with Mashup Template/Unsplash
 
-# Description 
+# HR_KickStart
+![image](https://user-images.githubusercontent.com/41589522/133105297-993ea492-2ee8-474b-a714-9d0a6ba49fac.jpg)
 
 
 ### Organizations suffer a lot of man power loss. The reasons may be plenty if we brainstorm on this. But in terms of data, we have handsome number of characteristics which can determine whether the employee will stay or leave the organization
@@ -27,6 +29,7 @@ In our dataset, we have good characteristics like
 - Last evaluation score 
 - Estimated number of projects 
 - Monthly average hours etc.
+- Salary range given to the employee
 
 This can be used to determine whether the employee will stay or not.
 
